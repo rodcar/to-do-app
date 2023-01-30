@@ -6,8 +6,6 @@ import pe.rodcar.todoapp.models.Priority
 import java.time.LocalDateTime
 
 data class TaskRegisterRequest(
-    @NotBlank(message = "Task id can't be empty")
-    val id: Long,
     @NotBlank(message = "task's description can't be empty")
     var description: String,
     var isReminderSet: Boolean,
